@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Student Registration Form</title>
+        </head>
+        <body>
+            <h2>Student Registration Form</h2>
+            <form action="" method="post" enctype="multipart/form-data">
+                <label for="student_name">Name: </label>
+                <input type="text" name="student_name" id="student_name" placeholder="Input name here">
+                <br>
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" id="dob" name="dob" required><br>
+                <br>
+                <fieldset>
+                    <legend>Gender: </legend>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male">Male</label>
+                    <br>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="female">Female</label>
+                </fieldset>
+                <br>
+                <label for="Address">Address:</label>
+                <br>
+                <textarea name="bio" id="bio" rows="5" cols="35"> 
+                Please enter your address here
+                </textarea>
+                <br>
+                <label for="Telephone">Telephone:</label>
+                <input type="telephone" name="telephone" id="telephone">
+                <br>
+                <label for="email_address">Email: </label>
+                <input type="email" name="email_address" id="email_address">
+                <br>
+                <fieldset>
+                    <legend>Course: </legend>
+                    <input type="checkbox" name="math" id="math" value="Math">
+                    <label for="math">Math</label>
+                    <br>
+                    <input type="checkbox" name="english" id="english" value="english">
+                    <label for="english">English</label>
+                    <br>
+                    <input type="checkbox" name="science" id="science" value="science">
+                    <label for="science">Science</label>
+                </fieldset>
+                <br>
+                <label for="classes">Classes:</label>
+                <select name="classes" id="classes">
+                    <option value="">--Select Preffered Class--</option>
+                    <option value="Physical">Physical</option>
+                    <option value="Virtual">Virtual</option>
+                </select>
+                <br>
+                <hr>
+                <input type="reset" id="cancel" name="cancel" value="Cancel">
+                <input type="submit" id="submit" name="submit" value="Register">
+            </form>
+        </body>
+    </html>
